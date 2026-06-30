@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HERBAL REMEDIES & HOLISTIC HEALING - The Modern Mystic. African traditional healer, ancestral healing, spiritual healer, holistic healing, traditional herbalist, business protection spells, financial guidance, love and relationship support, and Herth homes." />
+  <title>HERBAL REMEDIES & HOLISTIC HEALING | The Modern Mystic</title>
+  <style>
+    :root {
+      --emerald: #001f17;
+      --emerald-2: #003525;
+      --emerald-3: #064733;
+      --black: #070a07;
+      --gold: #dca52b;
+      --gold-2: #f2c65c;
+      --cream: #fbf3df;
+      --muted: #d8ccb0;
+      --line: rgba(220, 165, 43, 0.45);
+      --panel: rgba(0, 35, 25, 0.78);
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 10% 5%, rgba(220, 165, 43, 0.14), transparent 24rem),
+        radial-gradient(circle at 92% 0%, rgba(8, 86, 57, 0.55), transparent 32rem),
+        linear-gradient(135deg, #020806 0%, var(--emerald) 38%, #00140f 100%);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.014) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent 80%);
+      z-index: -2;
+    }
+
+    #gold-particles {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.78;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 36px));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(220, 165, 43, 0.28);
+      background: rgba(0, 20, 15, 0.92);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 260px;
+    }
+
+    .brand-mark {
+      width: 58px;
+      height: 58px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-2);
+      background: radial-gradient(circle, rgba(220,165,43,0.18), rgba(0,37,26,0.78));
+    }
+
+    .brand small {
+      display: block;
+      color: var(--gold-2);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .brand strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--gold);
+      font-size: clamp(1.25rem, 2vw, 1.9rem);
+      line-height: 0.95;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 2vw, 26px);
+      color: #fff8e8;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .links a {
+      opacity: 0.92;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .links a:hover {
+      color: var(--gold-2);
+      opacity: 1;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 0 22px;
+      border: 1px solid var(--gold);
+      border-radius: 5px;
+      background: linear-gradient(135deg, var(--gold-2), var(--gold));
+      color: #110d02;
+      font-weight: 900;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      box-shadow: 0 12px 30px rgba(220, 165, 43, 0.24);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 38px rgba(220, 165, 43, 0.36);
+    }
+
+    .btn.ghost {
+      color: var(--cream);
+      background: rgba(0, 0, 0, 0.2);
+      box-shadow: none;
+    }
+
+    .hero {
+      min-height: calc(100vh - 86px);
+      display: grid;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero > .container {
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -5rem;
+      top: 7rem;
+      width: 30rem;
+      height: 42rem;
+      opacity: 0.16;
+      background:
+        radial-gradient(ellipse at center, transparent 42%, var(--gold) 43%, transparent 45%),
+        repeating-linear-gradient(100deg, transparent 0 18px, rgba(242,198,92,0.36) 19px 20px);
+      transform: rotate(-12deg);
+      z-index: -1;
+    }
+
+    .motion-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+      transform: translate3d(0, calc(var(--scroll-depth, 0) * -0.08px), 0);
+    }
+
+    .floating-herb,
+    .healing-smoke {
+      position: absolute;
+      opacity: 0.68;
+      filter: drop-shadow(0 0 18px rgba(242, 198, 92, 0.16));
+      animation: floatDrift 9s ease-in-out infinite;
+    }
+
+    .floating-herb {
+      width: 96px;
+      height: 150px;
+      border-left: 2px solid rgba(242, 198, 92, 0.7);
+    }
+
+    .floating-herb::before,
+    .floating-herb::after {
+      content: "";
+      position: absolute;
+      width: 52px;
+      height: 24px;
+      border: 1px solid rgba(242, 198, 92, 0.62);
+      border-radius: 50% 0 50% 0;
+      background: linear-gradient(135deg, rgba(12, 80, 48, 0.62), rgba(242, 198, 92, 0.08));
+      transform-origin: left center;
+    }
+
+    .floating-herb::before {
+      left: 0;
+      top: 28px;
+      transform: rotate(-28deg);
+    }
+
+    .floating-herb::after {
+      left: 0;
+      top: 78px;
+      transform: rotate(28deg) scaleX(-1);
+    }
+
+    .herb-one {
+      left: 6%;
+      top: 16%;
+      animation-delay: -1.8s;
+    }
+
+    .herb-two {
+      right: 7%;
+      top: 10%;
+      transform: scale(1.22) rotate(14deg);
+      animation-delay: -4s;
+    }
+
+    .herb-three {
+      right: 18%;
+      bottom: 9%;
+      transform: scale(0.82) rotate(-18deg);
+      animation-delay: -6s;
+    }
+
+    .healing-smoke {
+      left: 17%;
+      bottom: 10%;
+      width: 180px;
+      height: 230px;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 40% 20%, rgba(255,255,255,0.18), transparent 34%),
+        radial-gradient(ellipse at 58% 52%, rgba(242,198,92,0.12), transparent 36%);
+      filter: blur(10px);
+      animation: smokeRise 12s ease-in-out infinite;
+    }
+
+    .ritual-circle {
+      position: absolute;
+      left: 3%;
+      top: 52%;
+      width: 280px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(220, 165, 43, 0.26);
+      box-shadow: inset 0 0 35px rgba(220, 165, 43, 0.08), 0 0 60px rgba(220, 165, 43, 0.08);
+      animation: ritualSpin 24s linear infinite;
+    }
+
+    .ritual-circle::before,
+    .ritual-circle::after {
+      content: "";
+      position: absolute;
+      inset: 16%;
+      border-radius: 50%;
+      border: 1px dashed rgba(242, 198, 92, 0.36);
+    }
+
+    .ritual-circle::after {
+      inset: 36%;
+      background: radial-gradient(circle, rgba(242,198,92,0.7) 0 4px, transparent 5px);
+      border-style: solid;
+      animation: ritualSpin 12s linear infinite reverse;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1.35fr 0.92fr;
+      align-items: center;
+      gap: 34px;
+      padding: 38px 0;
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 470px;
+      border-right: 1px solid var(--line);
+      display: grid;
+      align-items: center;
+      padding-right: 26px;
+    }
+
+    .still-life {
+      min-height: 390px;
+      border: 1px solid rgba(220,165,43,0.34);
+      border-radius: 8px;
+      background:
+        linear-gradient(to bottom, transparent, rgba(0,0,0,0.58)),
+        radial-gradient(circle at 32% 36%, rgba(230,190,94,0.32), transparent 9rem),
+        linear-gradient(140deg, rgba(20,50,28,0.9), rgba(4,10,8,0.96));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.18s ease, box-shadow 0.25s ease;
+      will-change: transform;
+    }
+
+    .still-life > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translateZ(24px) scale(1.04);
+      filter: saturate(1.05) contrast(1.06);
+    }
+
+    .still-life::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.44)),
+        radial-gradient(circle at 45% 42%, transparent 0 34%, rgba(0,20,15,0.24) 64%, rgba(0,0,0,0.54) 100%);
+      transform: translateZ(30px);
+      pointer-events: none;
+    }
+
+    .ritual-orbit {
+      position: absolute;
+      inset: 9%;
+      border: 1px solid rgba(242, 198, 92, 0.28);
+      border-radius: 50%;
+      transform: translateZ(52px) rotateX(64deg);
+      animation: ritualSpin 18s linear infinite;
+    }
+
+    .ritual-orbit::before,
+    .ritual-orbit::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold-2);
+      box-shadow: 0 0 18px var(--gold-2);
+    }
+
+    .ritual-orbit::before {
+      left: 50%;
+      top: -4px;
+    }
+
+    .ritual-orbit::after {
+      left: 12%;
+      bottom: 8%;
+    }
+
+    .model-row {
+      position: absolute;
+      right: 18px;
+      bottom: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: end;
+      transform: translateZ(70px);
+      z-index: 2;
+    }
+
+    .model-bowl,
+    .model-bottle,
+    .model-staff {
+      position: relative;
+      transform-style: preserve-3d;
+      animation: objectTurn 9s ease-in-out infinite;
+    }
+
+    .model-bowl {
+      width: 54px;
+      height: 30px;
+      border-radius: 0 0 50% 50%;
+      background: linear-gradient(90deg, #4b2d17, #f2c65c, #2c190d);
+      border: 1px solid rgba(242,198,92,0.72);
+    }
+
+    .model-bowl::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      right: 3px;
+      top: -8px;
+      height: 14px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, #111 30%, #dca52b 32%, #3c2614 70%);
+      border: 1px solid rgba(242,198,92,0.72);
+    }
+
+    .model-bottle {
+      width: 24px;
+      height: 58px;
+      border-radius: 9px 9px 5px 5px;
+      background: linear-gradient(90deg, #122718, #8eb35a 45%, #172315);
+      border: 1px solid rgba(242,198,92,0.56);
+      animation-delay: -2s;
+    }
+
+    .model-bottle::before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: -15px;
+      width: 10px;
+      height: 18px;
+      border-radius: 5px 5px 2px 2px;
+      background: #cab98b;
+    }
+
+    .model-staff {
+      width: 7px;
+      height: 84px;
+      border-radius: 8px;
+      background: linear-gradient(#f2c65c, #6b3b18);
+      transform: rotate(14deg);
+      animation-delay: -4s;
+    }
+
+    .eyebrow {
+      color: var(--gold-2);
+      font-size: 0.84rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      line-height: 1.03;
+    }
+
+    h1 {
+      font-size: clamp(3.25rem, 6.5vw, 6.9rem);
+      max-width: 760px;
+      letter-spacing: 0;
+    }
+
+    h1 span, h2 span {
+      color: var(--gold);
+    }
+
+    .gold-rule {
+      width: min(210px, 52%);
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      margin: 22px 0;
+      position: relative;
+    }
+
+    .gold-rule::after {
+      content: "";
+      position: absolute;
+      left: 45%;
+      top: -3px;
+      width: 7px;
+      height: 7px;
+      transform: rotate(45deg);
+      background: var(--gold);
+    }
+
+    .hero-copy p {
+      max-width: 590px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .highlight-panel {
+      border-left: 1px solid var(--gold);
+      padding-left: 28px;
+      display: grid;
+      gap: 22px;
+    }
+
+    .highlight {
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .icon-circle {
+      width: 58px;
+      height: 58px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-2);
+      background: rgba(0, 0, 0, 0.16);
+    }
+
+    .highlight h3 {
+      color: var(--gold);
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .highlight p {
+      color: var(--cream);
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 72px 0;
+      border-bottom: 1px solid rgba(220, 165, 43, 0.24);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    .section-title .eyebrow {
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: clamp(2.25rem, 4vw, 4rem);
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 12px auto 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.85fr 0.82fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .about-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 13px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold-2);
+      font-size: 1.8rem;
+      line-height: 1;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--cream);
+      font-size: 0.76rem;
+      margin-top: 5px;
+    }
+
+    .profile-card, .promise-card, .mission-panel, .contact-panel, .service-card, .gallery-card, .testimonial, .why-item {
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(0, 54, 38, 0.8), rgba(0, 21, 16, 0.86));
+      box-shadow: 0 18px 60px rgba(0,0,0,0.22);
+    }
+
+    .profile-card {
+      min-height: 390px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .profile-photo {
+      position: absolute;
+      inset: 0;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.08);
+      transform: scale(1.02);
+    }
+
+    .profile-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,16,12,0.72));
+    }
+
+    .profile-badge {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2;
+      border: 1px solid rgba(242,198,92,0.46);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: rgba(0, 18, 13, 0.72);
+      backdrop-filter: blur(10px);
+    }
+
+    .profile-badge strong {
+      display: block;
+      color: var(--gold-2);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.18rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .profile-badge span {
+      color: var(--cream);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .promise-card {
+      border-radius: 8px;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .promise-card::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      bottom: -80px;
+      width: 270px;
+      height: 270px;
+      border: 1px solid rgba(220,165,43,0.18);
+      border-radius: 50%;
+      background: repeating-conic-gradient(from 0deg, rgba(220,165,43,0.16) 0deg 8deg, transparent 8deg 16deg);
+      opacity: 0.38;
+    }
+
+    .promise-card h3 {
+      color: var(--gold);
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .promise-card p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      color: var(--cream);
+      max-width: 290px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .signature {
+      color: var(--gold-2);
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      margin-top: 24px;
+      font-size: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mission-panel {
+      margin-top: 28px;
+      border-radius: 8px;
+      padding: 26px;
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .mission-panel p {
+      margin: 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+
+    .gallery-card {
+      border-radius: 7px;
+      overflow: hidden;
+      min-height: 235px;
+      display: grid;
+      grid-template-rows: 138px 1fr;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .gallery-card:hover, .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold-2);
+    }
+
+    .thumb {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(220,165,43,0.24), rgba(0, 24, 18, 0.95));
+    }
+
+    .thumb::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--thumb);
+      opacity: 0.95;
+    }
+
+    .gallery-card:nth-child(1) { --thumb: radial-gradient(circle at 25% 25%, #e7d58a 0 7%, transparent 8%), radial-gradient(circle at 65% 28%, #b9812f 0 8%, transparent 9%), radial-gradient(circle at 40% 67%, #35663e 0 10%, transparent 11%), repeating-linear-gradient(135deg, #152016 0 12px, #3e2e18 13px 22px); }
+    .gallery-card:nth-child(2) { --thumb: radial-gradient(circle at 46% 38%, #f0be4f 0 5%, transparent 7%), linear-gradient(90deg, transparent 40%, rgba(242,198,92,0.5) 42% 45%, transparent 47%), repeating-radial-gradient(circle at 60% 65%, #2b1b12 0 10px, #050403 11px 18px); }
+    .gallery-card:nth-child(3) { --thumb: radial-gradient(circle at 28% 62%, #d8ccb0 0 8%, transparent 9%), radial-gradient(circle at 70% 32%, #cab98b 0 12%, transparent 13%), linear-gradient(135deg, #4d5d35, #0b1610); }
+    .gallery-card:nth-child(4) { --thumb: radial-gradient(circle at 50% 28%, #b96e34 0 8%, transparent 9%), radial-gradient(circle at 50% 53%, #4b2d1b 0 17%, transparent 18%), linear-gradient(150deg, #472d1c, #080604 68%); }
+    .gallery-card:nth-child(5) { --thumb: linear-gradient(90deg, rgba(242,198,92,0.3), transparent 28%), repeating-linear-gradient(90deg, #3b2114 0 22px, #180f0b 23px 40px), radial-gradient(circle at 55% 45%, #8a4a2a 0 12%, transparent 13%); }
+    .gallery-card:nth-child(6) { --thumb: radial-gradient(circle at 68% 42%, #72a157 0 16%, transparent 17%), radial-gradient(circle at 36% 62%, #b8893b 0 12%, transparent 13%), linear-gradient(135deg, #163f27, #050706); }
+
+    .gallery-body {
+      padding: 17px 14px 18px;
+      text-align: center;
+    }
+
+    .gallery-body h3 {
+      color: #fff;
+      font-size: 0.92rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .gallery-body p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.42;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      border-radius: 8px;
+      padding: 28px;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+
+    .service-card .icon-circle,
+    .service-card h3,
+    .service-card ul,
+    .service-card .mini-link {
+      transform: translateZ(22px);
+    }
+
+    .service-card h3 {
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 18px 0 10px;
+    }
+
+    .service-card ul {
+      color: var(--muted);
+      padding-left: 18px;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    .service-card li {
+      margin: 5px 0;
+    }
+
+    .mini-link {
+      color: var(--gold-2);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .why-item {
+      border-radius: 7px;
+      padding: 20px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .why-item .icon-circle {
+      width: 48px;
+      height: 48px;
+    }
+
+    .why-item h3 {
+      color: var(--gold);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .why-item p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .globe-section {
+      padding-top: 0;
+    }
+
+    .globe-panel {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 32px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: clamp(24px, 4vw, 44px);
+      background:
+        radial-gradient(circle at 22% 45%, rgba(220, 165, 43, 0.17), transparent 16rem),
+        linear-gradient(135deg, rgba(0, 54, 38, 0.84), rgba(0, 15, 12, 0.9));
+      overflow: hidden;
+    }
+
+    .healing-globe {
+      width: min(360px, 78vw);
+      aspect-ratio: 1;
+      margin: auto;
+      border-radius: 50%;
+      position: relative;
+      transform-style: preserve-3d;
+      background:
+        radial-gradient(circle at 35% 28%, rgba(255,255,255,0.18), transparent 12%),
+        radial-gradient(circle at 40% 50%, #0a5d3e 0 18%, #003f2d 36%, #001a13 69%);
+      border: 1px solid rgba(242,198,92,0.52);
+      box-shadow: inset -28px -18px 44px rgba(0,0,0,0.55), 0 24px 80px rgba(0,0,0,0.34), 0 0 60px rgba(220,165,43,0.1);
+      animation: globeFloat 8s ease-in-out infinite;
+    }
+
+    .healing-globe::before {
+      content: "";
+      position: absolute;
+      inset: 8%;
+      border-radius: 50%;
+      background:
+        repeating-linear-gradient(90deg, transparent 0 22px, rgba(242,198,92,0.18) 23px 24px),
+        repeating-linear-gradient(0deg, transparent 0 28px, rgba(242,198,92,0.12) 29px 30px);
+      border: 1px solid rgba(242,198,92,0.2);
+      animation: globeLines 14s linear infinite;
+    }
+
+    .healing-globe::after {
+      content: "";
+      position: absolute;
+      inset: -12%;
+      border-radius: 50%;
+      border: 1px solid rgba(242,198,92,0.32);
+      transform: rotateX(72deg);
+    }
+
+    .globe-dot {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold-2);
+      box-shadow: 0 0 18px var(--gold-2), 0 0 34px rgba(242,198,92,0.5);
+      z-index: 2;
+    }
+
+    .dot-one { left: 42%; top: 31%; }
+    .dot-two { left: 56%; top: 52%; }
+    .dot-three { left: 31%; top: 58%; }
+    .dot-four { left: 64%; top: 37%; }
+
+    .globe-copy h2 {
+      margin-bottom: 14px;
+    }
+
+    .globe-copy p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      max-width: 610px;
+    }
+
+    .location-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .location-tags span {
+      border: 1px solid rgba(242,198,92,0.42);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--cream);
+      background: rgba(0,0,0,0.18);
+      font-size: 0.88rem;
+    }
+
+    .message {
+      background:
+        linear-gradient(rgba(0, 26, 19, 0.82), rgba(0, 16, 12, 0.86)),
+        radial-gradient(circle at 18% 42%, rgba(220,165,43,0.22), transparent 24rem);
+      text-align: center;
+    }
+
+    .message .container {
+      max-width: 970px;
+    }
+
+    .message p {
+      color: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.4rem, 2.6vw, 2.35rem);
+      line-height: 1.35;
+    }
+
+    .message .small {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      margin-top: 18px;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .testimonial {
+      border-radius: 8px;
+      padding: 26px;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .quote {
+      color: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-size: 1.07rem;
+    }
+
+    .stars {
+      color: var(--gold-2);
+      letter-spacing: 0.12em;
+      margin-top: 14px;
+    }
+
+    .author {
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 0.92rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .contact-panel {
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .contact-panel h3 {
+      color: var(--gold);
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin: 24px 0;
+    }
+
+    .contact-list a, .contact-list div {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      align-items: center;
+      gap: 12px;
+      color: var(--cream);
+      overflow-wrap: anywhere;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--gold-2);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid rgba(220, 165, 43, 0.45);
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.22);
+      color: var(--cream);
+      min-height: 48px;
+      padding: 13px 14px;
+      font: inherit;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 136px;
+      resize: vertical;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--gold-2);
+      box-shadow: 0 0 0 3px rgba(220, 165, 43, 0.16);
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    footer {
+      padding: 44px 0 28px;
+      background: rgba(0, 10, 8, 0.72);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.7fr 0.8fr 1fr;
+      gap: 32px;
+      border-bottom: 1px solid rgba(220, 165, 43, 0.26);
+      padding-bottom: 28px;
+    }
+
+    .footer-grid h3 {
+      color: var(--gold);
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+    }
+
+    .footer-grid p, .footer-grid a {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 4px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .footer-cta {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .copyright {
+      color: var(--muted);
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.86rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes floatDrift {
+      0%, 100% { translate: 0 0; rotate: -3deg; }
+      50% { translate: 14px -22px; rotate: 5deg; }
+    }
+
+    @keyframes smokeRise {
+      0%, 100% { translate: 0 18px; opacity: 0.2; scale: 0.9; }
+      50% { translate: 18px -24px; opacity: 0.52; scale: 1.08; }
+    }
+
+    @keyframes ritualSpin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes objectTurn {
+      0%, 100% { rotate: 0 1 0 -12deg; }
+      50% { rotate: 0 1 0 16deg; }
+    }
+
+    @keyframes globeFloat {
+      0%, 100% { transform: rotateX(9deg) rotateY(-16deg) translateY(0); }
+      50% { transform: rotateX(13deg) rotateY(18deg) translateY(-10px); }
+    }
+
+    @keyframes globeLines {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      #gold-particles {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1080px) {
+      .links {
+        display: none;
+      }
+
+      .hero-grid, .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-art {
+        min-height: 330px;
+        border-right: 0;
+        padding-right: 0;
+      }
+
+      .highlight-panel {
+        grid-template-columns: repeat(2, 1fr);
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      .gallery-grid, .why-grid, .globe-panel {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services-grid, .testimonials-grid, .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .nav {
+        min-height: 74px;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand-mark {
+        width: 48px;
+        height: 48px;
+      }
+
+      .brand small {
+        font-size: 0.6rem;
+      }
+
+      .brand strong {
+        font-size: 1.16rem;
+      }
+
+      .nav > .btn {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding: 28px 0 46px;
+        gap: 24px;
+      }
+
+      .hero-copy {
+        order: 1;
+      }
+
+      .hero-art {
+        order: 2;
+        min-height: auto;
+      }
+
+      .highlight-panel {
+        order: 3;
+      }
+
+      h1 {
+        font-size: clamp(2.45rem, 11.5vw, 3.8rem);
+      }
+
+      section {
+        padding: 52px 0;
+      }
+
+      .highlight-panel, .stats, .gallery-grid, .services-grid, .why-grid, .testimonials-grid, .footer-grid, .globe-panel, form {
+        grid-template-columns: 1fr;
+      }
+
+      .still-life {
+        min-height: 260px;
+      }
+
+      .mission-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gold-particles" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="The Modern Mystic home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 64 64" fill="none">
+            <path d="M32 55V16M32 16C24 15 18 10 15 4C14 14 18 22 32 24M32 16C40 15 46 10 49 4C50 14 46 22 32 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M32 55C21 49 13 42 9 31C20 32 28 38 32 48C36 38 44 32 55 31C51 42 43 49 32 55Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>
+          <small>HERBAL REMEDIES & HOLISTIC HEALING</small>
+          <strong>The Modern Mystic</strong>
+        </span>
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn" href="#contact">Book a Session</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="motion-layer" aria-hidden="true">
+        <span class="floating-herb herb-one"></span>
+        <span class="floating-herb herb-two"></span>
+        <span class="floating-herb herb-three"></span>
+        <span class="healing-smoke"></span>
+        <span class="ritual-circle"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-art reveal" aria-label="Herbal medicine still life illustration">
+          <div class="still-life tilt-target">
+            <svg viewBox="0 0 520 620" role="img" aria-label="Candles, herbs, bowls, and healing tools">
+              <defs>
+                <linearGradient id="bowl" x1="0" x2="1">
+                  <stop stop-color="#3f2915"/>
+                  <stop offset="1" stop-color="#c79136"/>
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="7" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <rect width="520" height="620" fill="transparent"/>
+              <path d="M330 150C360 110 375 72 388 28C403 78 390 130 360 160M345 146C333 105 331 62 337 24" stroke="#a98c3c" stroke-width="5" stroke-linecap="round"/>
+              <path d="M240 205C285 190 327 201 350 237C334 292 267 302 224 266C218 241 222 219 240 205Z" fill="url(#bowl)" stroke="#f2c65c" stroke-width="3"/>
+              <ellipse cx="287" cy="219" rx="66" ry="19" fill="#141008" stroke="#f2c65c" stroke-width="3"/>
+              <path d="M112 260C92 300 103 356 155 374C210 347 213 289 178 254C151 241 127 244 112 260Z" fill="#473018" stroke="#dca52b" stroke-width="3"/>
+              <ellipse cx="154" cy="263" rx="54" ry="18" fill="#10120c" stroke="#f2c65c" stroke-width="3"/>
+              <path d="M355 300H420L407 420H368L355 300Z" fill="#402416" stroke="#e7b948" stroke-width="3"/>
+              <ellipse cx="388" cy="300" rx="34" ry="10" fill="#f5d169"/>
+              <rect x="367" y="246" width="42" height="74" rx="8" fill="#f1d88c"/>
+              <path d="M388 246C381 230 390 221 390 210C406 228 405 238 388 246Z" fill="#f4a52b" filter="url(#glow)"/>
+              <circle cx="91" cy="426" r="54" fill="#17110c" stroke="#c99531" stroke-width="3"/>
+              <path d="M58 421C94 404 121 409 137 438M72 452C101 428 121 429 142 451" stroke="#c2b27c" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="260" cy="438" r="74" fill="#120d09" stroke="#dca52b" stroke-width="3"/>
+              <path d="M210 422C246 398 294 406 321 433M214 461C255 442 285 444 315 464" stroke="#7a9e4b" stroke-width="10" stroke-linecap="round"/>
+              <path d="M90 160C60 132 62 96 91 82C130 64 142 30 112 5C163 20 160 76 125 104C101 123 101 143 133 168" stroke="rgba(255,255,255,0.18)" stroke-width="8" fill="none"/>
+              <path d="M40 500C130 472 210 500 296 480C368 462 430 488 488 462" stroke="#7e5a1f" stroke-width="14" stroke-linecap="round"/>
+            </svg>
+            <span class="ritual-orbit" aria-hidden="true"></span>
+            <span class="model-row" aria-hidden="true">
+              <span class="model-bowl"></span>
+              <span class="model-bottle"></span>
+              <span class="model-staff"></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">HERBAL REMEDIES & HOLISTIC HEALING</p>
+          <h1>Ancient Wisdom.<br><span>Natural Healing.</span><br>Divine Connection.</h1>
+          <div class="gold-rule"></div>
+          <p>Rooted in African ancestral wisdom, metaphysics, folk medicine, and holistic healing, The Modern Mystic offers sacred guidance for mind, body, spirit, love, protection, and life progress.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Book a Healing Session</a>
+            <a class="btn ghost" href="#services">Explore Services</a>
+          </div>
+        </div>
+
+        <aside class="highlight-panel reveal" aria-label="Service highlights">
+          <article class="highlight">
+            <span class="icon-circle" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 48 48" fill="none"><path d="M24 40V16M24 16C17 15 12 11 10 5C9 15 14 22 24 24M24 16C31 15 36 11 38 5C39 15 34 22 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <div><h3>Herbal Remedies</h3><p>Natural plant-based healing</p></div>
+          </article>
+          <article class="highlight">
+            <span class="icon-circle" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 48 48" fill="none"><path d="M24 5C18 13 15 20 15 27a9 9 0 0 0 18 0c0-7-3-14-9-22Z" stroke="currentColor" stroke-width="3"/><path d="M24 18v23M16 38h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <div><h3>Spiritual Healing</h3><p>Energy and ancestral alignment</p></div>
+          </article>
+          <article class="highlight">
+            <span class="icon-circle" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 48 48" fill="none"><path d="M15 39h18M18 39V20h12v19M21 20V8h6v12M10 39V26h5v13M33 39V26h5v13" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></span>
+            <div><h3>Ritual & Cleansing</h3><p>Traditional spiritual practices</p></div>
+          </article>
+          <article class="highlight">
+            <span class="icon-circle" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 48 48" fill="none"><path d="M24 40C14 34 8 27 8 18a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 9-6 16-16 22Z" stroke="currentColor" stroke-width="3"/><path d="M24 13v27" stroke="currentColor" stroke-width="3"/></svg></span>
+            <div><h3>Holistic Wellness</h3><p>Mind, body, and soul balance</p></div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="eyebrow">About the Healer</p>
+            <h2>The Modern <span>Mystic</span></h2>
+            <p>With over 15 years of experience in ancestral healing, African medicines, astrology, ritualism, herbalism, spiritual healing, native healing, philosophy, and holistic wellness, The Modern Mystic bridges ancient wisdom with modern spiritual care.</p>
+            <p>Gifted through ancestral lineage and known for deep intuition, the healer is trusted for reading the roots of a client's problems before they speak. This work is inspired by the curanderas and wise women of Mdakane, community healers who offered remedies, comfort, protection, and guidance.</p>
+            <p>The mission is simple and sacred: to uplift, support, heal, and spread love with intention, respect, and spiritual integrity. Every session honors the belief that humans can shape reality through intention, love, and connection to the earth.</p>
+            <div class="stats">
+              <div class="stat"><strong>15+</strong><span>Years Experience</span></div>
+              <div class="stat"><strong>1,000+</strong><span>Clients Guided</span></div>
+              <div class="stat"><strong>50+</strong><span>Herbal Remedies</span></div>
+              <div class="stat"><strong>100%</strong><span>Intentional Care</span></div>
+            </div>
+          </div>
+          <div class="profile-card reveal" aria-label="Professional healer profile card">
+            <div class="profile-orb"></div>
+          </div>
+          <div class="promise-card reveal">
+            <h3>My Promise</h3>
+            <p>I honor the ancestors, work with nature, and walk with you on your healing journey.</p>
+            <div class="signature">The Modern Mystic</div>
+          </div>
+        </div>
+        <div class="mission-panel reveal">
+          <span class="icon-circle" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 48 48" fill="none"><path d="M24 42C13 36 7 28 7 18a9 9 0 0 1 16-6 9 9 0 0 1 18 6c0 10-6 18-17 24Z" stroke="currentColor" stroke-width="3"/><path d="M15 27h18M24 13v27" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+          <p><strong>Core message:</strong> ancestral wisdom is a living force. Through intention, love, prayer, herbs, and connection to the earth, healing becomes protection, progress, and renewed purpose. Gratitude goes to every client and supporter who walks this spiritual journey with trust.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">African Wisdom & Healing Gallery</p>
+          <h2>Rooted in <span>Sacred Practice</span></h2>
+          <p>Premium visual cards honoring ancient traditions, natural remedies, and spiritual practices for total well-being.</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card reveal"><div class="thumb"></div><div class="gallery-body"><h3>African Medicines</h3><p>Powerful natural remedies for healing</p></div></article>
+          <article class="gallery-card reveal"><div class="thumb"></div><div class="gallery-body"><h3>Ritualism</h3><p>Sacred rituals for cleansing and protection</p></div></article>
+          <article class="gallery-card reveal"><div class="thumb"></div><div class="gallery-body"><h3>Herbal Remedies</h3><p>Nature's gifts for health and vitality</p></div></article>
+          <article class="gallery-card reveal"><div class="thumb"></div><div class="gallery-body"><h3>Spiritual Healers</h3><p>Guidance from spirit and ancestors</p></div></article>
+          <article class="gallery-card reveal"><div class="thumb"></div><div class="gallery-body"><h3>Native Healers</h3><p>Traditional wisdom passed down</p></div></article>
+          <article class="gallery-card reveal"><div class="thumb"></div><div class="gallery-body"><h3>Holistic Healing</h3><p>Mind, body, and spirit in balance</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">What I Offer</p>
+          <h2>Services for <span>Healing, Love & Protection</span></h2>
+          <p>Organized support for spiritual clarity, relationship restoration, financial movement, family harmony, business growth, and personal well-being.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="icon-circle" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 48 48" fill="none"><path d="M24 41V18M24 18C16 17 10 12 8 5C7 17 13 25 24 27M24 18C32 17 38 12 40 5C41 17 35 25 24 27" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <h3>Herbal Medicine</h3>
+            <ul><li>African Medicines</li><li>Traditional herbalist care</li><li>Herth homes and natural support</li><li>Holistic healing for body, mind, and spirit</li></ul>
+            <a class="mini-link" href="#contact">Learn more -></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-circle" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 48 48" fill="none"><path d="M24 7v34M12 25c8 0 12-6 12-18 0 12 4 18 12 18M14 39h20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <h3>Spiritual Healing</h3>
+            <ul><li>Ancestral readings</li><li>Energy cleansing</li><li>Removal of negative forces</li><li>Spiritual finger and protection principles</li></ul>
+            <a class="mini-link" href="#contact">Get spiritual guidance today -></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-circle" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 48 48" fill="none"><path d="M15 39h18M18 39V20h12v19M21 20V9h6v11M10 39V27h5v12M33 39V27h5v12" stroke="currentColor" stroke-width="3"/></svg></span>
+            <h3>Ritual & Cleansing</h3>
+            <ul><li>House cleansing</li><li>Ancestral rites</li><li>Protection ceremonies</li><li>Negative energy removal</li></ul>
+            <a class="mini-link" href="#contact">Speak to the healer now -></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-circle" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 48 48" fill="none"><path d="M24 40C14 34 8 27 8 18a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 9-6 16-16 22Z" stroke="currentColor" stroke-width="3"/></svg></span>
+            <h3>Love & Relationships</h3>
+            <ul><li>Bring back lost lover</li><li>Stop breakups or recovery</li><li>Inner fragrance and attract new love</li><li>Heal Mutual Wounds</li></ul>
+            <a class="mini-link" href="#contact">Start your transformation -></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-circle" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 48 48" fill="none"><path d="M24 5 39 12v10c0 10-6 18-15 21C15 40 9 32 9 22V12l15-7Z" stroke="currentColor" stroke-width="3"/><path d="M17 24l5 5 10-11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <h3>Protection</h3>
+            <ul><li>Family protection spells and stop family fights</li><li>Restore peace in the home and success blessings for children</li><li>Protect business from competitors and sabotage</li><li>Remove bad energy affecting customers and attract the client</li></ul>
+            <a class="mini-link" href="#contact">Book protection work -></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-circle" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 48 48" fill="none"><path d="M24 41c10-7 15-15 15-24-8 1-13 5-15 13C22 22 17 18 9 17c0 9 5 17 15 24Z" stroke="currentColor" stroke-width="3"/><path d="M24 30v11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <h3>Holistic Wellness</h3>
+            <ul><li>Fertility assistance: can't have a baby?</li><li>Men's performance support</li><li>Debt relief rituals, Financial guidance, and solve film blocksages</li><li>Career, promotion, business success tickets, and identifying why life is not progressing</li></ul>
+            <a class="mini-link" href="#contact">Book a healing session -></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>Trusted, Warm & <span>Spiritually Grounded</span></h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-item reveal"><span class="icon-circle" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 48 48" fill="none"><path d="M24 42V18M24 18C16 17 10 12 8 5C7 17 13 25 24 27M24 18C32 17 38 12 40 5C41 17 35 25 24 27" stroke="currentColor" stroke-width="3"/></svg></span><h3>Ancient Wisdom</h3><p>Rooted in timeless African ancestral healing traditions.</p></article>
+          <article class="why-item reveal"><span class="icon-circle" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 48 48" fill="none"><path d="M9 27c13-1 22-8 27-20 5 16-2 29-19 34" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span><h3>Natural & Safe</h3><p>Plant-based remedies and respectful spiritual principles.</p></article>
+          <article class="why-item reveal"><span class="icon-circle" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 48 48" fill="none"><path d="M24 6 29 18l13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1 5-12Z" stroke="currentColor" stroke-width="3"/></svg></span><h3>Holistic Approach</h3><p>Treating the root across mind, body, spirit, and home.</p></article>
+          <article class="why-item reveal"><span class="icon-circle" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 48 48" fill="none"><path d="M16 40V29a8 8 0 0 1 16 0v11M10 40h28M18 15a6 6 0 1 0 12 0 6 6 0 0 0-12 0Z" stroke="currentColor" stroke-width="3"/></svg></span><h3>Personalized Care</h3><p>Every healing session is tailored to your situation.</p></article>
+          <article class="why-item reveal"><span class="icon-circle" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 48 48" fill="none"><path d="M24 42c10-7 15-15 15-24-8 1-13 5-15 13C22 22 17 18 9 17c0 9 5 17 15 24Z" stroke="currentColor" stroke-width="3"/></svg></span><h3>Spiritual Connection</h3><p>Deep connection with ancestors, nature, and intention.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="globe-section" aria-label="Healing locations">
+      <div class="container">
+        <div class="globe-panel reveal">
+          <div class="healing-globe tilt-target" aria-hidden="true">
+            <span class="globe-dot dot-one"></span>
+            <span class="globe-dot dot-two"></span>
+            <span class="globe-dot dot-three"></span>
+            <span class="globe-dot dot-four"></span>
+          </div>
+          <div class="globe-copy">
+            <p class="eyebrow">3D Globe of Healing Locations</p>
+            <h2>Guidance for <span>Clients Worldwide</span></h2>
+            <p>The Modern Mystic serves people seeking ancestral healing, spiritual protection, love restoration, business cleansing, financial movement, and holistic wellness across the world.</p>
+            <div class="location-tags" aria-label="Service reach">
+              <span>United States</span>
+              <span>Africa</span>
+              <span>Europe</span>
+              <span>Online Sessions</span>
+              <span>Remote Spiritual Work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message">
+      <div class="container reveal">
+        <p>Healing is a sacred agreement between spirit, earth, intention, and love. The Modern Mystic exists to guide, uplift, protect, and help you step into a clearer reality with ancestral wisdom and spiritual integrity.</p>
+        <p class="small">Thank you to every client and supporter who has trusted this path of transformation.</p>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Voices of Healing</p>
+          <h2>Client <span>Testimonials</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial reveal"><p class="quote">"The guidance and herbs I received changed my life. I felt lighter, protected, and more aligned than ever before."</p><div><p class="author">- Amara T.</p><p class="stars">★★★★★</p></div></article>
+          <article class="testimonial reveal"><p class="quote">"Powerful spiritual work and genuine care. The rituals cleared my home and my path opened for abundance."</p><div><p class="author">- Kwame B.</p><p class="stars">★★★★★</p></div></article>
+          <article class="testimonial reveal"><p class="quote">"I came with anxiety and confusion, and left with peace and clarity. This is true healing."</p><div><p class="author">- Nandi M.</p><p class="stars">★★★★★</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Contact & Booking</p>
+          <h2>Ready to Begin <span>Your Healing Journey?</span></h2>
+          <p>Book a healing session, speak to the healer now, start your transformation, or get spiritual guidance today.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-panel reveal">
+            <h3>Speak to the Healer Now</h3>
+            <p>For ancestral healing, love guidance, spiritual cleansing, business protection, family harmony, or holistic wellness, reach out with your name and situation.</p>
+            <div class="contact-list">
+              <a href="tel:+12028698534"><span class="icon-circle" aria-hidden="true">☎</span><span><strong>Phone / WhatsApp</strong><br>+1 202-869-8534</span></a>
+              <a href="mailto:herbalistspiritualhealer@eay.jp"><span class="icon-circle" aria-hidden="true">✉</span><span><strong>Email</strong><br>herbalistspiritualhealer@eay.jp</span></a>
+              <div><span class="icon-circle" aria-hidden="true">⌖</span><span><strong>Location</strong><br>Serving clients worldwide</span></div>
+            </div>
+            <a class="btn" href="https://wa.me/12028698534">WhatsApp Now</a>
+          </aside>
+          <div class="contact-panel reveal">
+            <form action="mailto:herbalistspiritualhealer@eay.jp" method="post" enctype="text/plain">
+              <label>Full Name<input type="text" name="name" placeholder="Your name" required></label>
+              <label>Phone / WhatsApp<input type="tel" name="phone" placeholder="+1 202-869-8534"></label>
+              <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+              <label>Service Needed<select name="service" required><option value="">Choose a service</option><option>Spiritual & Ancestral Healing</option><option>Love & Relationship Services</option><option>Financial & Life Progress Services</option><option>Family & Home Harmony</option><option>Business Protection & Growth</option><option>Health & Personal Well-Being</option></select></label>
+              <label class="full">Your Message<textarea name="message" placeholder="Share what you need help with..." required></textarea></label>
+              <button class="btn full" type="submit">Get Spiritual Guidance Today</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 64 64" fill="none"><path d="M32 55V16M32 16C24 15 18 10 15 4C14 14 18 22 32 24M32 16C40 15 46 10 49 4C50 14 46 22 32 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M32 55C21 49 13 42 9 31C20 32 28 38 32 48C36 38 44 32 55 31C51 42 43 49 32 55Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+            </span>
+            <span><small>The Modern</small><strong>Mystic</strong></span>
+          </div>
+          <p>Ancient wisdom. Natural healing. Divine connection.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#why">Why Choose Us</a><a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Contact Info</h3>
+          <a href="tel:+12028698534">+1 202-869-8534</a>
+          <a href="https://wa.me/12028698534">WhatsApp</a>
+          <a href="mailto:herbalistspiritualhealer@eay.jp">herbalistspiritualhealer@eay.jp</a>
+          <p>Worldwide spiritual guidance</p>
+        </div>
+        <div class="footer-cta">
+          <h3>Ready to Begin?</h3>
+          <p>Your path to healing starts here.</p>
+          <a class="btn" href="#contact">Book a Session</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 HERBAL REMEDIES & HOLISTIC HEALING - The Modern Mystic. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+    const root = document.documentElement;
+    const motionTargets = document.querySelectorAll('.tilt-target, .service-card');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    window.addEventListener('scroll', () => {
+      root.style.setProperty('--scroll-depth', String(window.scrollY));
+    }, { passive: true });
+
+    motionTargets.forEach((target) => {
+      target.addEventListener('pointermove', (event) => {
+        if (reduceMotion.matches) return;
+        const rect = target.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+        const y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+        const lift = target.classList.contains('service-card') ? 18 : 8;
+        target.style.transform = `perspective(900px) rotateX(${y * -7}deg) rotateY(${x * 9}deg) translateY(-${lift}px)`;
+      });
+
+      target.addEventListener('pointerleave', () => {
+        target.style.transform = '';
+      });
+    });
+
+    const particleCanvas = document.getElementById('gold-particles');
+    const particleCtx = particleCanvas.getContext('2d');
+    let particles = [];
+    let particleWidth = 0;
+    let particleHeight = 0;
+
+    function resizeParticles() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      particleWidth = window.innerWidth;
+      particleHeight = window.innerHeight;
+      particleCanvas.width = particleWidth * ratio;
+      particleCanvas.height = particleHeight * ratio;
+      particleCanvas.style.width = `${particleWidth}px`;
+      particleCanvas.style.height = `${particleHeight}px`;
+      particleCtx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      const count = Math.min(90, Math.max(34, Math.floor(particleWidth / 18)));
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * particleWidth,
+        y: Math.random() * particleHeight,
+        r: Math.random() * 1.8 + 0.5,
+        s: Math.random() * 0.45 + 0.12,
+        a: Math.random() * 0.45 + 0.18
+      }));
+    }
+
+    function drawParticles() {
+      particleCtx.clearRect(0, 0, particleWidth, particleHeight);
+      particles.forEach((particle) => {
+        particle.y -= particle.s;
+        particle.x += Math.sin((particle.y + particle.r) * 0.01) * 0.25;
+        if (particle.y < -8) {
+          particle.y = particleHeight + 8;
+          particle.x = Math.random() * particleWidth;
+        }
+        particleCtx.beginPath();
+        particleCtx.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2);
+        particleCtx.fillStyle = `rgba(242, 198, 92, ${particle.a})`;
+        particleCtx.shadowBlur = 14;
+        particleCtx.shadowColor = 'rgba(242, 198, 92, 0.7)';
+        particleCtx.fill();
+      });
+      requestAnimationFrame(drawParticles);
+    }
+
+    if (!reduceMotion.matches) {
+      resizeParticles();
+      drawParticles();
+      window.addEventListener('resize', resizeParticles, { passive: true });
+    }
+  </script>
+</body>
+</html>
